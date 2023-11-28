@@ -1,3 +1,4 @@
+
 :root {
   --main-color: #c271ff;
   --opacity-value: 0.9;
@@ -37,7 +38,9 @@
 
 .btn:hover,
 .btn:active {
-  opacity: var(--opacity-value);
+  background-color: #C271FF!important;
+  border-color: #C271FF!important;
+  opacity: 0.9;
 }
 
 /* Header / Hero Styles */
