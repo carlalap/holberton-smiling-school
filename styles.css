@@ -310,7 +310,7 @@
 
 .quote-text {
   padding-left: 53px;
-}
+ }
 
 .quotes .row [class*="col"] {
   padding-left: 0;
@@ -322,6 +322,7 @@
   line-height: 34px;
   margin-bottom: 22px;
 }
+
 
 .quote-text h4 {
   font-size: 22px;
