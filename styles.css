@@ -280,7 +280,7 @@
   }
 }
 
-/* Quotes CAROUSEL Section  */
+/***** Quotes CAROUSEL Section  ************/
 
 .loader {
   border: 10px solid #f3f3f3;
@@ -393,7 +393,7 @@
   }
 }
 
-/******************** POPULAR SECTION  ********************/
+/******************** POPULAR TUTORIALS SECTION  ********************/
 
 .popular {
   height: auto;
@@ -504,7 +504,7 @@
   }
 }
 
-/* SMILES Section  */
+/********** SMILES Section  ******************/
 
 .smiles {
   height: auto;
@@ -874,7 +874,7 @@
 }
 
 .search .input-group {
-  height: 48px;
+  height: 35px;
   border: 0px;
 }
 
@@ -1011,3 +1011,6 @@
     width: 90vw;
   }
 }
+
+
+/*
