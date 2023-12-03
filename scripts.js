@@ -1,4 +1,4 @@
-/*****  Quotes Carousel ****/
+/***** HOMEPAGE - Quotes Carousel ****/
 
 $(document).ready(function() {
 $.ajax({
@@ -30,15 +30,64 @@ $.ajax({
         }
 });
 
+/*******  Homepage -  POPULAR TUTORIALS  *********/
 
-/*******  Homepage - Carousel popular tutorials  *********/
+$.ajax({
+    url: 'https://smileschool-api.hbtn.info/popular-tutorials',
+    type: "get",
+    beforeSend: function() {
+        $("#videosLoader").show();
+    },
+    success: function(response) {
+        $("#videosLoader").hide();
+         // Clear the existing content in the carousel-inner
+        $("#popularVideos").empty();
 
+        for (let i = 0; i < response.length; i += 1) {
+        let $carouselItem = $('<div class="carousel-item"><div class="row"></div></div>');
+    
+        for (let j = i; j < i + 4 && j < response.length; j++) {
+            let $stars = '';
+    
+            for (let k = 0; k < response[j].star; k++) {
+            $stars += '<img src="./images/star_on.png" width="15px" height="15px">';
+            }
+    
+            for (let k = 0; k < 5 - response[j].star; k++) {
+            $stars += '<img src="./images/star_off.png" width="15px" height="15px">';
+            }
+            let $html = $(`
+                 <div class="col-12 col-sm-4 col-lg-3 d-flex justify-content-center">
+                    <div class="card">
+                        <img src="${response[j].thumb_url}" class="card-img-top" alt="Video thumbnail"/>
+                        <div class="card-img-overlay text-center">
+                            <img src="images/play.png" alt="Play" width="64px" class="align-self-center play-overlay"/>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title font-weight-bold">${response[j].title}</h5>
+                            <p class="card-text text-muted">${response[j]["sub-title"]}</p>
+                            <div class="creator d-flex align-items-center">
+                                <img src="${response[j].author_pic_url}" alt="Creator of Video" width="30px" class="rounded-circle"/>
+                                <h6 class="pl-3 m-0 main-color">${response[j].author}</h6>
+                            </div>
+                            <div class="info pt-3 d-flex justify-content-between">
+                                <div class="rating">
+                                    ${$stars}
+                                </div>
+                                <span class="main-color">${response[j].duration}</span>
+                            </div>
+                        </div>
+                    </div>  
+                </div>`);
 
-
-
-
-
-
+            $carouselItem.find('.row').append($html);
+            }
+            $("#popularVideos").append($carouselItem);
+        }
+    // Activate the first carousel item
+    $("#popularVideos .carousel-item:first-child").addClass("active");
+    }
+});
 
 /*********  SEARCH PRICING - QUOTES SECTION *************/
 
@@ -72,7 +121,6 @@ $.ajax({
             $topics += `<button data-value="${$t[i]}" class="dropdown-item" type="button">${$t[i].substr(0,1).toUpperCase()+ $t[i].substr(1)}</button>`;
           }
           $("#topic-menu").append($topics);
-
 
           let $s = response.sorts;
             $("#sort-dropdownMenu").append(`<button class="btn btn-secondary border-0 rounded-0 search-element w-100 text-left" type="button" id="current-sort" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

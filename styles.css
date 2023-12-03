@@ -347,6 +347,8 @@
   padding-left: var(--quotes-arrows-pad);
 }
 
+
+
 @media screen and (max-width: 991px) {
   .quotes .carousel-item img {
     margin-left: 80px;
@@ -766,7 +768,7 @@
   }
 }
 
-/* FAQ SECTION  */
+/************** FAQ SECTION  ***********************/
 
 .faq .section-header h2 {
   margin-top: 74px;
@@ -841,7 +843,7 @@
 ==============================================================
 ============================================================== */
 
-/* Header Section  */
+/************* Header Section  **********/
 
 .courses-header {
   background-image: url(images/pic_3.jpg);
@@ -867,7 +869,7 @@
   }
 }
 
-/* SEARCH SECTION  */
+/********* SEARCH SECTION  *****************/
 
 .search {
   background-color: var(--main-color);
@@ -1014,4 +1016,3 @@
 }
 
 
-/*
