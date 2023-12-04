@@ -74,7 +74,7 @@ The designs were planned for Desktop, Tablet, and Mobile.
    <!-- Progress vs Score -->
 
    <!-- Task Body -->
-   <p>For this project you will fork this <a href="/rltoken/TV15_xBJLHluq5jqTy8oXg" title="codebase" target="_blank">codebase</a>:</p>
+  <p>For this project you will fork this <a href="/rltoken/TV15_xBJLHluq5jqTy8oXg" title="codebase" target="_blank">codebase</a>:</p>
 
 <p>(<code>homepage.html</code> -&gt; <code>0-homepage.html</code>)</p>
 <p>(<code>pricing.html</code> -&gt; <code>0-pricing.html</code>)</p>
@@ -104,10 +104,7 @@ The designs were planned for Desktop, Tablet, and Mobile.
     </h3>
   </div>
 
-  <div class="panel-body">
-    <span id="user_id" data-id="6138"></span>
-
- <!-- Progress vs Score -->
+<!-- Progress vs Score -->
 
 <!-- Task Body -->
 <p>From <code>0-homepage.html</code>, create <code>1-homepage.html</code>.</p>
