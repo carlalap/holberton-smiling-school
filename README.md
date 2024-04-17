@@ -7,12 +7,21 @@ These group of web pages were coded from scratch with the help of the Boostrap F
 The original design it was forked from [codebase](https://github.com/jzamora5/holberton-smiling-school), refer to Readme2.md file for more details.
 
 [Figma Homepage](https://www.figma.com/file/QYQqMYbdpAHL5xTclwJKSI/Homepage)
-
 [Figma Pricing](https://www.figma.com/file/KLAI53jdYpfFNEy0O79ymB/Pricing)
-
 [Figma Courses](https://www.figma.com/file/ivg3abH1HLmMayBgjGg1Qf/Courses)
 
 The designs were planned for Desktop, Tablet, and Mobile.
+
+<h3>Requirements</h3>
+
+<ul>
+  <li>I had to use Bootstrap.</li>
+  <li>My <code>styles.css</code> had to be as small as I could - <strong>I had to use as many Bootstrap classes as I could</strong>.</li>
+  <li>I had to use jQuery.</li>
+  <li>My <code>scripts.js</code> had to contain all my JavaScript part.</li>
+  <li>My JavaScript had to be executed only when the document was loaded.</li>
+</ul>
+
 
 # Homepage
 
@@ -32,19 +41,10 @@ The designs were planned for Desktop, Tablet, and Mobile.
 | -------------------------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------ |
 | ![Desktop](https://i.ibb.co/y51S3HX/Courses-Desktop.png) | ![Tablet](https://i.ibb.co/28qK1g0/Courses-Tablet.png) | ![Mobile](https://i.ibb.co/f8zNgkx/Courses-Mobile.png) |
 
-<h3>Requirements</h3>
-
-<ul>
-<li>You have to use Bootstrap</li>
-<li>Your <code>styles.css</code> must be as small as you can - <strong>you must use as much as you can Bootstrap classes</strong></li>
-<li>You have to use JQuery</li>
-<li>Your <code>scripts.js</code> must contain all your Javascript part</li>
-<li>Your Javascript must be executed only when the document is loaded</li>
-</ul>
 
 <h3>Imports</h3>
 
-<p>For this project, you will need: fonts from Google, JQuery, Bootstrap CSS/JS</p>
+<p>For this project, I used: <strong> fonts from Google, JQuery, Bootstrap CSS/JS </strong></p>
 
 <pre><code>&lt;link href=&quot;https://fonts.googleapis.com/css?family=Source+Sans+Pro&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
 &lt;link href=&quot;https://fonts.googleapis.com/css?family=Coiny&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
