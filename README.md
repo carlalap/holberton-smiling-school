@@ -7,7 +7,9 @@ These group of web pages were coded from scratch with the help of the Boostrap F
 The original design it was forked from [codebase](https://github.com/jzamora5/holberton-smiling-school), refer to Readme2.md file for more details.
 
 [Figma Homepage](https://www.figma.com/file/QYQqMYbdpAHL5xTclwJKSI/Homepage)
+
 [Figma Pricing](https://www.figma.com/file/KLAI53jdYpfFNEy0O79ymB/Pricing)
+
 [Figma Courses](https://www.figma.com/file/ivg3abH1HLmMayBgjGg1Qf/Courses)
 
 The designs were planned for Desktop, Tablet, and Mobile.
